@@ -1,0 +1,2 @@
+,model_name,num_layers,epochs,batch_size,optimizer,accuracy,val_accuracy,Regularizer,Regularizer_value,Initializer
+0,model1,12,10,32,adam,0.9681,0.9649,l2,0.01,HeNormal
