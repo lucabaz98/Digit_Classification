@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 ## Customization
 
-You can customize the MLP model by modifying the following parameters in `main.py`:
+You can customize the models by modifying the following parameters in `main.py`:
 
 - `num_layers`: Number of hidden layers in the MLP.
 - `layers_units`: Number of units in each hidden layer.
