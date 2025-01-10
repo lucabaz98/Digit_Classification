@@ -1,4 +1,4 @@
-# Multilayer Perceptron for Image Classification
+# Image Classification
 
 This repository contains a Python project that implements multple Neural Network Models for image classification using Keras.
 The project focuses on classifying images from the MNIST dataset, which consists of handwritten digits.
