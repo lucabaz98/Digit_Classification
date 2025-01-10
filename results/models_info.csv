@@ -1,2 +1,18 @@
-,model_name,num_layers,epochs,batch_size,optimizer,accuracy,val_accuracy,Regularizer,Regularizer_value,Initializer
-0,model1,12,10,32,adam,0.9681,0.9649,l2,0.01,HeNormal
+model_name,accuracy,val_accuracy,loss,val_loss,num_layers,layers_units,epochs,batch_size,optimizer,activation,Regularizer,Regularizer_value,Initializer
+model1,0.9374,0.9338,0.5918,0.5986,7,"[256, 128, 64, 32, 16, 10]",10,32,adam,relu,l2,0.01,he_normal
+model2,0.9444,0.9414,0.504,0.5,7,"[256, 256, 256, 256, 256, 10]",10,32,adam,relu,l2,0.01,he_normal
+model3,0.1114,0.1119,2.5866,2.587,7,"[256, 128, 64, 32, 16, 10]",10,32,adam,relu,l1,0.01,he_normal
+model4,0.1114,0.1119,2.5857,2.5854,7,"[256, 128, 64, 32, 16, 10]",10,32,adam,relu,l1_l2,0.01,he_normal
+model5,0.8482,0.8548,1.0013,0.9763,5,"[64, 32, 16, 10]",30,64,adam,relu,l2,0.1,he_normal
+model6,0.9815,0.9685,0.1481,0.201,5,"[64, 32, 16, 10]",30,64,adam,relu,l2,0.001,he_normal
+model13,0.9722,0.958,0.1978,0.2436,9,"[128, 64, 32, 16, 10]",30,128,adam,relu,l2,0.01,he_normal
+model7,0.9466,0.9462,0.3693,0.3638,5,"[64, 32, 16, 10]",30,64,adam,tanh,l2,0.01,lecun_normal
+model8,0.9473,0.9494,0.3733,0.3629,5,"[64, 32, 16, 10]",30,64,adam,tanh,l2,0.01,lecun_uniform
+model9,0.728,0.7343,1.7216,1.6899,8,"[32, 32, 32, 32, 32, 32, 10]",30,64,adam,relu,l2,0.1,he_normal
+model10,0.1076,0.1119,2.3022,2.3013,8,"[512, 256, 128, 64, 32, 16, 10]",30,128,adam,sigmoid,l2,0.01,glorot_normal
+model11,0.1075,0.1039,2.3026,2.3021,8,"[512, 256, 128, 64, 32, 16, 10]",30,32,adam,sigmoid,l2,0.01,glorot_normal
+model12,0.9445,0.953,0.4112,0.385,6,"[128, 64, 32, 16, 10]",30,32,rmsprop,relu,l2,0.01,he_normal
+model14,0.9587,0.9558,0.4786,0.4846,6,"[128, 64, 32, 16, 10]",30,32,SGD,relu,l2,0.01,he_normal
+model15,0.1114,0.1119,2.3014,2.3014,6,"[128, 64, 32, 16, 10]",30,32,rmsprop,relu,l2,0.01,zeros
+model1_da,0.4594,0.5492,2.0095,1.8057,8,"[32, 32, 32, 32, 32, 32, 10]",30,64,adam,relu,l2,0.1,he_normal
+model2_da,0.8939,0.9435,0.7076,0.5685,7,"[256, 128, 64, 32, 16, 10]",30,64,adam,relu,l2,0.01,he_normal
