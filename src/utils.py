@@ -81,6 +81,7 @@ def results_table(model, modelname, optimizer, epochs, batch_size, activation, r
             'val_loss': round(history.history['val_loss'][-1],4),
             'num_layers': len(model.layers),
             'layers_units': layers_units,
+            'real_epochs': len(history.history['accuracy']),
             'epochs': epochs,
             'batch_size': batch_size,
             'optimizer': optimizer,
